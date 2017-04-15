@@ -1,0 +1,22 @@
+{
+  "name": "materialize-stylus",
+  "version": "0.0.1",
+  "authors": [
+    "ben eaves"
+  ],
+  "description": "stylus port of materialize.css",
+  "main": "index.styl",
+  "keywords": [
+    "stylus",
+    "materialize",
+    "port",
+    "stylus-materialize",
+    "materialize-stylus"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/angeal185/materialize-stylus",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angeal185/materialize-stylus.git"
+  }
+}
