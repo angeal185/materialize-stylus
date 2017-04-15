@@ -1,0 +1,86 @@
+.collection
+    margin 0.5rem 0 1rem 0
+    border 1px solid #e0e0e0
+    border-radius 2px
+    overflow hidden
+    position relative
+    .collection-item
+        background-color #fff
+        line-height 1.5rem
+        padding 10px 20px
+        margin 0
+        border-bottom 1px solid #e0e0e0
+        &.avatar
+            min-height 84px
+            padding-left 72px
+            position relative
+            .circle
+                position absolute
+                width 42px
+                height 42px
+                overflow hidden
+                left 15px
+                display inline-block
+                vertical-align middle
+            i
+                &.circle
+                    font-size 18px
+                    line-height 42px
+                    color #fff
+                    background-color #999
+                    text-align center
+            .title
+                font-size 16px
+            p
+                margin 0
+            .secondary-content
+                position absolute
+                top 16px
+                right 16px
+        &:last-child
+            border-bottom none
+        &.active
+            background-color #26a69a
+            color #eafaf9
+            .secondary-content
+                color #fff
+    a
+        &.collection-item
+            display block
+            transition 0.25s
+            color #26a69a
+            &:not(.active):hover
+                background-color #ddd
+    &.with-header
+        .collection-header
+            background-color #fff
+            border-bottom 1px solid #e0e0e0
+            padding 10px 20px
+        .collection-item
+            padding-left 30px
+            &.avatar
+                padding-left 72px
+
+.secondary-content
+    float right
+    color #26a69a
+
+.collapsible
+    .collection
+        margin 0
+        border none
+
+.video-container
+    position relative
+    padding-bottom 56.25%
+    height 0
+    overflow hidden
+
+.video-container iframe,
+.video-container object,
+.video-container embed
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%

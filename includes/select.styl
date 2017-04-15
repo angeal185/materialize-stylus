@@ -1,0 +1,91 @@
+select
+    display none
+    background-color rgba(255,255,255,0.9)
+    width 100%
+    padding 5px
+    border 1px solid #f2f2f2
+    border-radius 2px
+    height 3rem
+    &.browser-default
+        display block
+    &:disabled
+        color rgba(0,0,0,0.3)
+
+.select-label
+    position absolute
+
+.select-wrapper
+    position relative
+    input
+        &.select-dropdown
+            position relative
+            cursor pointer
+            background-color transparent
+            border none
+            border-bottom 1px solid #9e9e9e
+            outline none
+            height 3rem
+            line-height 3rem
+            width 100%
+            font-size 1rem
+            margin 0 0 20px 0
+            padding 0
+            display block
+            &:disabled
+                color rgba(0,0,0,0.3)
+                cursor default
+                -webkit-user-select none
+                -moz-user-select none
+                -ms-user-select none
+                border-bottom 1px solid rgba(0,0,0,0.3)
+    span
+        &.caret
+            color initial
+            position absolute
+            right 0
+            top 0
+            bottom 0
+            height 10px
+            margin auto 0
+            font-size 10px
+            line-height 10px
+            &.disabled
+                color rgba(0,0,0,0.26)
+    & + label
+        position absolute
+        top -14px
+        font-size 0.8rem
+    i
+        color rgba(0,0,0,0.3)
+
+.select-dropdown li.disabled,
+.select-dropdown li.disabled > span,
+.select-dropdown li.optgroup
+    color rgba(0,0,0,0.3)
+    background-color transparent
+
+.prefix
+    & ~ .select-wrapper
+        margin-left 3rem
+        width 92%
+        width calc(100% - 3rem)
+    & ~ label
+        margin-left 3rem
+
+.select-dropdown
+    li
+        img
+            height 40px
+            width 40px
+            margin 5px 15px
+            float right
+        &.optgroup
+            border-top 1px solid #eee
+            &.selected
+                & > span
+                    color rgba(0,0,0,0.7)
+            & > span
+                color rgba(0,0,0,0.4)
+            & ~ li
+                &.optgroup-option
+                    padding-left 1rem

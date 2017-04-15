@@ -1,0 +1,110 @@
+.range-field
+    position relative
+
+input[type=range],
+input[type=range] + .thumb
+    cursor pointer
+
+input[type=range]
+    position relative
+    background-color transparent
+    border none
+    outline none
+    width 100%
+    margin 15px 0
+    padding 0
+    -webkit-appearance none
+    border 1px solid #fff
+    & + .thumb
+        position absolute
+        border none
+        height 0
+        width 0
+        border-radius 50%
+        background-color #26a69a
+        top 10px
+        margin-left -6px
+        -webkit-transform-origin 50% 50%
+        transform-origin 50% 50%
+        -webkit-transform rotate(-45deg)
+        transform rotate(-45deg)
+        .value
+            display block
+            width 30px
+            text-align center
+            color #26a69a
+            font-size 0
+            -webkit-transform rotate(45deg)
+            transform rotate(45deg)
+        &.active
+            border-radius 50% 50% 50% 0
+            .value
+                color #fff
+                margin-left -1px
+                margin-top 8px
+                font-size 10px
+
+input[type=range]:focus
+    outline none
+    &::-webkit-slider-runnable-track
+        background #ccc
+    &::-moz-range-track
+        background #ccc
+    &::-ms-fill-lower
+        background #888
+    &::-ms-fill-upper
+        background #ccc
+
+input[type=range]::-webkit-slider-runnable-track
+    height 3px
+    background #c2c0c2
+    border none
+
+input[type=range]::-webkit-slider-thumb
+    -webkit-appearance none
+    border none
+    height 14px
+    width 14px
+    border-radius 50%
+    background-color #26a69a
+    -webkit-transform-origin 50% 50%
+    transform-origin 50% 50%
+    margin -5px 0 0 0
+    transition 0.3s
+
+input[type=range]::-moz-range-track
+    height 3px
+    background #ddd
+    border none
+
+input[type=range]::-moz-range-thumb
+    border none
+    height 14px
+    width 14px
+    border-radius 50%
+    background #26a69a
+    margin-top -5px
+
+input[type=range]:-moz-focusring
+    outline 1px solid #fff
+    outline-offset -1px
+
+input[type=range]::-ms-track
+    height 3px
+    background transparent
+    border-color transparent
+    border-width 6px 0
+    color transparent
+
+input[type=range]::-ms-fill-lower
+    background #777
+
+input[type=range]::-ms-fill-upper
+    background #ddd
+
+input[type=range]::-ms-thumb
+    border none
+    height 14px
+    width 14px
+    border-radius 50%
+    background #26a69a

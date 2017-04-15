@@ -1,0 +1,231 @@
+html
+    font-family sans-serif
+    -ms-text-size-adjust 100%
+    -webkit-text-size-adjust 100%
+
+body
+    margin 0
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary
+    display block
+
+audio,
+canvas,
+progress,
+video
+    display inline-block
+    vertical-align baseline
+
+audio
+    &:not([controls])
+        display none
+        height 0
+
+[hidden],
+template
+    display none
+
+a
+    background-color transparent
+    color #039be5
+    text-decoration none
+    -webkit-tap-highlight-color transparent
+
+a:active,
+a:hover
+    outline 0
+
+abbr[title]
+    border-bottom 1px dotted
+
+b,
+strong
+    font-weight bold
+
+dfn
+    font-style italic
+
+h1
+    font-size 2em
+    margin 0.67em 0
+
+mark
+    background #ff0
+    color #000
+
+small
+    font-size 80%
+
+sub,
+sup
+    font-size 75%
+    line-height 0
+    position relative
+    vertical-align baseline
+
+sup
+    top -0.5em
+
+sub
+    bottom -0.25em
+
+img
+    border 0
+
+svg
+    &:not(:root)
+        overflow hidden
+
+figure
+    margin 1em 40px
+
+hr
+    box-sizing content-box
+    height 0
+
+pre
+    overflow auto
+
+code,
+kbd,
+pre,
+samp
+    font-family monospace, monospace
+    font-size 1em
+
+ul
+    &:not(.browser-default)
+        padding-left 0
+        list-style-type none
+        li
+            list-style-type none
+
+.valign-wrapper
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
+    -webkit-align-items center
+    -ms-flex-align center
+    align-items center
+    .valign
+        display block
+
+.clearfix
+    clear both
+
+.z-depth-0
+    box-shadow none !important
+
+.z-depth-1,
+nav,
+.card-panel,
+.card,
+.toast,
+.btn,
+.btn-large,
+.btn-floating,
+.dropdown-content,
+.collapsible,
+.side-nav
+    box-shadow 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2)
+
+.z-depth-1-half,
+.btn:hover,
+.btn-large:hover,
+.btn-floating:hover
+    box-shadow 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2)
+
+.z-depth-2
+    box-shadow 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
+
+.z-depth-3
+    box-shadow 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3)
+
+.z-depth-4,
+.modal
+    box-shadow 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3)
+
+.z-depth-5
+    box-shadow 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3)
+
+.hoverable
+    transition box-shadow 0.25s
+    box-shadow 0
+    &:hover
+        transition box-shadow 0.25s
+        box-shadow 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+
+.divider
+    height 1px
+    overflow hidden
+    background-color #e0e0e0
+
+blockquote
+    margin 20px 0
+    padding-left 1.5rem
+    border-left 5px solid #ee6e73
+
+i
+    line-height inherit
+    &.left
+        float left
+        margin-right 15px
+    &.right
+        float right
+        margin-left 15px
+    &.tiny
+        font-size 1rem
+    &.small
+        font-size 2rem
+    &.medium
+        font-size 4rem
+    &.large
+        font-size 6rem
+
+img.responsive-img,
+video.responsive-video
+    max-width 100%
+    height auto
+
+.material-tooltip
+    padding 10px 8px
+    font-size 1rem
+    z-index 2000
+    background-color transparent
+    border-radius 2px
+    color #fff
+    min-height 36px
+    line-height 120%
+    opacity 0
+    position absolute
+    text-align center
+    max-width calc(100% - 4px)
+    overflow hidden
+    left 0
+    top 0
+    pointer-events none
+    visibility hidden
+
+.backdrop
+    position absolute
+    opacity 0
+    height 7px
+    width 14px
+    border-radius 0 0 50% 50%
+    background-color #323232
+    z-index -1
+    -webkit-transform-origin 50% 0%
+    transform-origin 50% 0%
+    visibility hidden

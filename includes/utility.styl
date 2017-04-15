@@ -1,0 +1,99 @@
+.hide
+    display none !important
+
+.left-align
+    text-align left
+
+.right-align
+    text-align right
+
+.center,
+.center-align
+    text-align center
+
+.left
+    float left !important
+
+.right
+    float right !important
+
+.no-select,
+input[type=range],
+input[type=range] + .thumb
+    -webkit-touch-callout none
+    -webkit-user-select none
+    -moz-user-select none
+    -ms-user-select none
+    user-select none
+
+.circle
+    border-radius 50%
+
+.center-block
+    display block
+    margin-left auto
+    margin-right auto
+
+.truncate
+    display block
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+
+.no-padding
+    padding 0 !important
+
+span
+    &.badge
+        min-width 3rem
+        padding 0 6px
+        margin-left 14px
+        text-align center
+        font-size 1rem
+        line-height 22px
+        height 22px
+        color #757575
+        float right
+        box-sizing border-box
+        &.new
+            font-weight 300
+            font-size 0.8rem
+            color #fff
+            background-color #26a69a
+            border-radius 2px
+            &:after
+                content " new"
+    &.badge[data-badge-caption]::after
+        content " " attr(data-badge-caption)
+
+nav
+    ul
+        a
+            span
+                &.badge
+                    display inline-block
+                    float none
+                    margin-left 4px
+                    line-height 22px
+                    height 22px
+
+.collection-item
+    span
+        &.badge
+            margin-top calc(0.75rem - 11px)
+
+.collapsible
+    span
+        &.badge
+            margin-top calc(1.5rem - 11px)
+
+.side-nav
+    span
+        &.badge
+            margin-top calc(24px - 11px)
+
+.material-icons
+    text-rendering optimizeLegibility
+    -webkit-font-feature-settings 'liga'
+    -moz-font-feature-settings 'liga'
+    font-feature-settings 'liga'
