@@ -5,7 +5,7 @@ stylus port of materialize css
 
 bower:
 ```sh
-$ bower install material-stylus --save-dev
+$ bower install materialize-stylus --save-dev
 ```
 
 done.
