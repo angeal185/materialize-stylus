@@ -15,7 +15,7 @@ No learning curve and no repeats. build it how you want it or just use it as an 
 ### Instructions
 materialize.css has been converted, broken down into smaller .styl includes and the include files are named accordingly.
 
-Simply edit as you see fit, comment out or remove unwanted includes in `index.styl` file then compile.
+Simply edit as you see fit, comment out or remove unwanted includes in `materialize.styl` file then compile.
 
 ````
 stylus materialize.styl 
